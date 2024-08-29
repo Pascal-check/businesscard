@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Visite Virtuelle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #003C57, #1796A4, #FFFFFF);
+            width: 90%;
+            max-width: 350px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            color: white;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        .name {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            color: white;
+        }
+
+        .title {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .info {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info i {
+            margin-right: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            width: 50px;
+            height: 50px;
+            background-color: #E9D1A9;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #A3232B;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 15px;
+                border-radius: 15px;
+            }
+
+            .name {
+                font-size: 1.2em;
+            }
+
+            .title {
+                font-size: 0.9em;
+            }
+
+            .info {
+                font-size: 0.9em;
+            }
+
+            .social-icons a {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="profile.jpg" alt="Photo de profil" class="profile-img">
+        <div class="name">Kongolo pascal</div>
+        <div class="title">videaste </div>
+
+        <div class="info">
+            <i class="fas fa-phone-alt"></i>
+            <span>+243 973038270</span>
+        </div>
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:pascalkongololualaba62@gmail.com" style="color:white; text-decoration:none;">pascalkongololualaba62@gmail.com</a>
+        </div>
+        <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>golf meteo1</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/planedi2?igsh=MW1jM2Vyb3o5bzRjbw=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/michael-kiny-820155300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/michael.kiny?mibextid=NTRm0r7WZyOdZZsz"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
